@@ -102,4 +102,10 @@ void PostApp::draw()
 	gl::clear( Color( 0, 0, 0 ) ); 
 }
 
-CINDER_APP( PostApp, RendererGl )
+static void prepareSettings(App::Settings *settings) {
+#ifdef CINDER_MSW
+	settings->setConsoleWindowEnabled(true);
+#endif
+}
+
+CINDER_APP(PostApp, RendererGl, &prepareSettings)

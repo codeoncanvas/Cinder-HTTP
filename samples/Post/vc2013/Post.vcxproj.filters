@@ -74,10 +74,21 @@
     <ClInclude Include="..\include\Resources.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\cinder\http\no_except_work_around.h">
+      <Filter>Blocks\Cinder-HTTP%28S%29\src\cinder\http</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resources.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\cinder\http\error_codes.ipp">
+      <Filter>Blocks\Cinder-HTTP%28S%29\src\cinder\http</Filter>
+    </None>
+    <None Include="..\..\..\src\cinder\http\url.ipp">
+      <Filter>Blocks\Cinder-HTTP%28S%29\src\cinder\http</Filter>
+    </None>
   </ItemGroup>
 </Project>

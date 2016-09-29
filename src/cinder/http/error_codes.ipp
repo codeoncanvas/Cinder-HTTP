@@ -14,7 +14,7 @@
 #include "asio/error_code.hpp"
 
 #define URDL_ERROR_CATEGORY_NOEXCEPT noexcept
-
+#include "no_except_work_around.h"
 namespace cinder {
 namespace http {
 namespace detail {

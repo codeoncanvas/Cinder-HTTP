@@ -18,9 +18,13 @@
 		<staticLibrary>lib/osx/libcrypto.a</staticLibrary>
 		<staticLibrary>lib/osx/libssl.a</staticLibrary>
 	</platform>
+	<!--
+	toolset v120 libs are version 1.0.2h from:
+	http://www.npcglib.org/~stathis/blog/precompiled-openssl/
+	-->
 	<platform os="msw" config="debug">
-		<staticLibrary>lib/msw/Debug/libeay32MT.lib</staticLibrary>
-		<staticLibrary>lib/msw/Debug/ssleay32MT.lib</staticLibrary>
+		<staticLibrary>lib/msw/Debug/libeay32MTd.lib</staticLibrary>
+		<staticLibrary>lib/msw/Debug/ssleay32MTd.lib</staticLibrary>
 	</platform>
 	<platform os="msw" config="release">
 		<staticLibrary>lib/msw/Release/libeay32MT.lib</staticLibrary>
