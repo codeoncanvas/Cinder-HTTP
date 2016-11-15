@@ -7,6 +7,7 @@
 	license="BSD, Boost"
 	summary="Implements http and https protocols with openssl as the security."
 	core="true"
+	git = "git@github.com:codeoncanvas/Cinder-HTTP.git"
 	>
 	<supports os="macosx" />
 	<supports os="msw" />
