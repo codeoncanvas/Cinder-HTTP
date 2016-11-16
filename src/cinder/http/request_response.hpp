@@ -16,7 +16,7 @@ enum class RequestMethod {
 	GET,
 	POST,
 	PUT,
-	DELETE
+	DEL // abbreviated as DELETE is keyword on win
 };
 	
 using RequestRef = std::shared_ptr<struct Request>;
@@ -48,7 +48,7 @@ struct Request {
 			case RequestMethod::GET: return "GET"; break;
 			case RequestMethod::POST: return "POST"; break;
 			case RequestMethod::PUT: return "PUT"; break;
-			case RequestMethod::DELETE: return "DELETE"; break;
+			case RequestMethod::DEL: return "DELETE"; break;
 			default: return "GET"; break;
 		}
 	}
